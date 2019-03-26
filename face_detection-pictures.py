@@ -25,6 +25,18 @@ import sys
 def get_pic():
     CWD_dir = os.getcwd()
     file_num = int(0)
+    json_save_data_conf = './data_test.json'
+    data_parse_file_exist = os.path.isfile(json_save_data_conf)
+    if data_parse_file_exist:
+        if len(str(open(json_save_data_conf).read())) >=1:
+            data_to_json_picture = json.loads(open(json_save_data_conf).read())
+        else:
+            data_to_json_picture ={}
+            data_to_json_picture['picture'] = []
+    else:
+        data_to_json_picture ={}
+        data_to_json_picture['picture'] = []
+
     for r, d, f in os.walk(CWD_dir):
         for file in f:
             if file.endswith("jpg") or file.endswith("jpeg") or file.endswith("png"):
@@ -39,7 +51,7 @@ def get_pic():
                         "name": file,
                         "faces": detect_faces(haar_face_cascade,test1,file,CWD_dir)
                     })
-    with open('data_test.json', 'w') as outfile:
+    with open(json_save_data_conf, 'w') as outfile:
         json.dump(data_to_json_picture, outfile)
     return 0
 
@@ -76,6 +88,4 @@ def detect_faces(f_cascade, colored_img, file_name,CWDIR):
     log.info("\n")
     return data_to_json_face
 
-data_to_json_picture = {}
-data_to_json_picture['picture'] = []
 get_pic()
