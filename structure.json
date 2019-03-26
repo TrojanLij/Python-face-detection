@@ -1,0 +1,117 @@
+{
+    "CWD": [{
+        "picture_directory": "picture_dir",
+        "picture": [{
+            "root_path": "path_to_root_dir",
+            "name": "name",
+            "format": "format",
+            "faces": [{
+                "face": [{
+                    "face_cordinate_X": "str(x)",
+                    "face_cordinate_Y": "str(y)",
+                    "rectangle_width": "str(w)",
+                    "rectangle_height": "str(h)",
+                    "face_snippet_name": "str(face_clip_str)",
+                    "snippet_directory": "str(CWDIR) + \\faceData\\"
+                }]
+            }, {
+                "face": [{
+                    "face_cordinate_X": "str(x)",
+                    "face_cordinate_Y": "str(y)",
+                    "rectangle_width": "str(w)",
+                    "rectangle_height": "str(h)",
+                    "face_snippet_name": "str(face_clip_str)",
+                    "snippet_directory": "str(CWDIR) + \\faceData\\"
+                }]
+
+            }, {
+                "face": [{
+                    "face_cordinate_X": "str(x)",
+                    "face_cordinate_Y": "str(y)",
+                    "rectangle_width": "str(w)",
+                    "rectangle_height": "str(h)",
+                    "face_snippet_name": "str(face_clip_str)",
+                    "snippet_directory": "str(CWDIR) + \\faceData\\"
+                }]
+
+            }, {
+                "face": [{
+                    "face_cordinate_X": "str(x)",
+                    "face_cordinate_Y": "str(y)",
+                    "rectangle_width": "str(w)",
+                    "rectangle_height": "str(h)",
+                    "face_snippet_name": "str(face_clip_str)",
+                    "snippet_directory": "str(CWDIR) + \\faceData\\"
+                }]
+
+            }, {
+                "face": [{
+                    "face_cordinate_X": "str(x)",
+                    "face_cordinate_Y": "str(y)",
+                    "rectangle_width": "str(w)",
+                    "rectangle_height": "str(h)",
+                    "face_snippet_name": "str(face_clip_str)",
+                    "snippet_directory": "str(CWDIR) + \\faceData\\"
+                }]
+
+            }]
+        }]
+    }, {
+        "picture_directory": "picture_dir",
+        "picture": [{
+            "root_path": "path_to_root_dir",
+            "name": "name",
+            "format": "format",
+            "faces": [{
+                "face": [{
+                    "face_cordinate_X": "str(x)",
+                    "face_cordinate_Y": "str(y)",
+                    "rectangle_width": "str(w)",
+                    "rectangle_height": "str(h)",
+                    "face_snippet_name": "str(face_clip_str)",
+                    "snippet_directory": "str(CWDIR) + \\faceData\\"
+                }]
+            }, {
+                "face": [{
+                    "face_cordinate_X": "str(x)",
+                    "face_cordinate_Y": "str(y)",
+                    "rectangle_width": "str(w)",
+                    "rectangle_height": "str(h)",
+                    "face_snippet_name": "str(face_clip_str)",
+                    "snippet_directory": "str(CWDIR) + \\faceData\\"
+                }]
+
+            }, {
+                "face": [{
+                    "face_cordinate_X": "str(x)",
+                    "face_cordinate_Y": "str(y)",
+                    "rectangle_width": "str(w)",
+                    "rectangle_height": "str(h)",
+                    "face_snippet_name": "str(face_clip_str)",
+                    "snippet_directory": "str(CWDIR) + \\faceData\\"
+                }]
+
+            }, {
+                "face": [{
+                    "face_cordinate_X": "str(x)",
+                    "face_cordinate_Y": "str(y)",
+                    "rectangle_width": "str(w)",
+                    "rectangle_height": "str(h)",
+                    "face_snippet_name": "str(face_clip_str)",
+                    "snippet_directory": "str(CWDIR) + \\faceData\\"
+                }]
+
+            }, {
+                "face": [{
+                    "face_cordinate_X": "str(x)",
+                    "face_cordinate_Y": "str(y)",
+                    "rectangle_width": "str(w)",
+                    "rectangle_height": "str(h)",
+                    "face_snippet_name": "str(face_clip_str)",
+                    "snippet_directory": "str(CWDIR) + \\faceData\\"
+                }]
+
+            }]
+        }]
+    }]
+}
