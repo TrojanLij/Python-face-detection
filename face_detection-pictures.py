@@ -66,7 +66,7 @@ def detect_faces(f_cascade, colored_img, file_name,CWDIR):
     log.basicConfig(filename=logname, level=log.INFO)
     #convert the test image to gray image as opencv face detector expects gray images
     gray = cv2.cvtColor(img_copy, cv2.COLOR_BGR2GRAY)
-    faces = f_cascade.detectMultiScale(gray, scaleFactor=1.2, minNeighbors=10, minSize=(10,10))
+    faces = f_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=10, minSize=(10,10))
     
     log.info(" "+str(file_name)+": found: "+str(len(faces))+" faces")
     log.info(" CWD: " + str(CWDIR))
@@ -84,8 +84,7 @@ def detect_faces(f_cascade, colored_img, file_name,CWDIR):
             'face_snippet_name': str(face_clip_str),
             'snippet_directory': str(CWDIR + "\\faceData\\")
         })
-    print("\tface: \n\t"+str("[" + str(x) + ", " + str(y) + ", " + str(w) + ", " + str(h) + "]")+"\n\tSnippet: "+ str(face_clip_str) + "\n")
-    #log.info("face: \n[[x y w h]]\n"+str(faces)+"\n")
+        print("\tface: "+str("[" + str(x) + ", " + str(y) + ", " + str(w) + ", " + str(h) + "]")+"\n\tSnippet: "+ str(face_clip_str) + "\n")
     log.info("\n")
     return data_to_json_face
 
