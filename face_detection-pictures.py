@@ -45,7 +45,7 @@ def get_pic():
                 test1 = cv2.imread(file)
                 if len(str(test1)) > 4:
                     haar_face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
-                    print(str(file))
+                    print("Picture: ........ " + str(file))
                     data_to_json_picture['picture'].append({
                         "root_path": CWD_dir,
                         "name": file,
@@ -84,6 +84,7 @@ def detect_faces(f_cascade, colored_img, file_name,CWDIR):
             'face_snippet_name': str(face_clip_str),
             'snippet_directory': str(CWDIR + "\\faceData\\")
         })
+    print("\tface: \n\t"+str("[" + str(x) + ", " + str(y) + ", " + str(w) + ", " + str(h) + "]")+"\n\tSnippet: "+ str(face_clip_str) + "\n")
     #log.info("face: \n[[x y w h]]\n"+str(faces)+"\n")
     log.info("\n")
     return data_to_json_face
