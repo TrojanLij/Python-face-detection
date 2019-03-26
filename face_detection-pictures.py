@@ -25,7 +25,7 @@ import sys
 def get_pic():
     CWD_dir = os.getcwd()
     file_num = int(0)
-    json_save_data_conf = './data_test.json'
+    json_save_data_conf = './JSON/data_test.json'
     data_parse_file_exist = os.path.isfile(json_save_data_conf)
     if data_parse_file_exist:
         if len(str(open(json_save_data_conf).read())) >=1:
@@ -62,7 +62,7 @@ def detect_faces(f_cascade, colored_img, file_name,CWDIR):
     img_copy = colored_img.copy()
     date_time = datetime.datetime.now()
     today_date_concat = date_time.strftime("%d") +"-"+date_time.strftime("%m")+"-"+date_time.strftime("%Y")
-    logname = str(today_date_concat+".log")
+    logname = str("./cfg/" + today_date_concat+".log")
     log.basicConfig(filename=logname, level=log.INFO)
     #convert the test image to gray image as opencv face detector expects gray images
     gray = cv2.cvtColor(img_copy, cv2.COLOR_BGR2GRAY)
