@@ -42,8 +42,8 @@ while True:
         id = str(randint(1, 9999))
         cv2.putText(frame, "./faceData/" + str(today_date_concat) +id+ ".jpg", (5, 15), font, 1, (255, 255, 255), 2)
         #cv2.imwrite("./faceData/" + str(today_date_concat) +id+ ".jpg", gray[y:y+h, x:x+w])
-    if (x, y, w, h) not in faces:
-        cv2.rectangle(frame, (0, 0), (638, 478), (0, 0, 255), 5)
+        if (x, y, w, h) not in faces:
+            cv2.rectangle(frame, (0, 0), (638, 478), (0, 0, 255), 5)
 
     if anterior != len(faces):
         anterior = len(faces)
