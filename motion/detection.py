@@ -39,8 +39,8 @@ while True:
         cords = str(x) +':'+ str(y)
         cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 255, 0), 2)
         cv2.putText(frame, cords, (x+3, y-8), font, 1, (255, 255, 0), 2)
-        id = str(randint(1, 9999))
-        cv2.putText(frame, "./faceData/" + str(today_date_concat) +id+ ".jpg", (5, 15), font, 1, (255, 255, 255), 2)
+        #id = str(randint(1, 9999))
+        #cv2.putText(frame, "./faceData/" + str(today_date_concat) +id+ ".jpg", (5, 15), font, 1, (255, 255, 255), 2)
         #cv2.imwrite("./faceData/" + str(today_date_concat) +id+ ".jpg", gray[y:y+h, x:x+w])
         #cv2.imshow('Face', gray[y:y+h, x:x+w])
         if (x, y, w, h) not in faces:
