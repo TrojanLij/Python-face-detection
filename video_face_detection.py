@@ -8,7 +8,7 @@ cascPath = "haarcascade_frontalface_alt.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
 log.basicConfig(filename='webcam.log',level=log.INFO)
 
-video_capture = cv2.VideoCapture("dictator.mp4")
+video_capture = cv2.VideoCapture(0)
 anterior = 0
 
 while True:
